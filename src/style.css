@@ -192,3 +192,7 @@ aside h3 {
 footer {
     font-family: "Bellota-Regular", sans-serif;
 }
+
+head::before {}
+
+.test-class { color: red; }
