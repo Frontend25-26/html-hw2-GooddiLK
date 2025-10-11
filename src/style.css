@@ -48,15 +48,11 @@ body {
     src: url("./internal/Yuji_Boku/YujiBoku-Regular.ttf") format("truetype");
 }
 
-header h1 {
+.vollkorn-reg-style {
     font-family: "VollkornSC-Regular", sans-serif;
 }
 
-.real-name {
-    font-family: "VollkornSC-Regular", sans-serif;
-}
-
-nav {
+.poiretone-reg-style {
     font-family: "PoiretOne-Regular", sans-serif;
 }
 
@@ -140,10 +136,6 @@ blockquote .sign {
     font-size: 1.2em;
 }
 
-.names-and-skills caption {
-    font-family: "PoiretOne-Regular", sans-serif;
-}
-
 .names-and-skills tr th {
     font-family: "CormorantSC-Regular", sans-serif;
 }
@@ -158,7 +150,7 @@ blockquote .sign {
     cursor: pointer;
 }
 
-.skill-master .secret { /* Сокрытие по умолчанию */
+.secret { /* Сокрытие по умолчанию + параметры*/
     position: absolute;
     background-color: black;
     color: #7b7b7b;
@@ -178,19 +170,15 @@ blockquote .sign {
 }
 
 aside {
-    font-family: Beirut, sans-serif;
+    font-family: "Beirut", sans-serif;
 }
 
-.shooting-technique {
+.bellota-style {
     font-family: "Bellota-Regular", sans-serif;
 }
 
 aside h3 {
     font-family: "Gabriela-Regular", sans-serif;
-}
-
-footer {
-    font-family: "Bellota-Regular", sans-serif;
 }
 
 head::before {
