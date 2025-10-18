@@ -2,5 +2,187 @@ body {
     margin: 0;
     padding: 0;
 
-    background: #292929;
+    background: #1a1a1a;
+    color: #808080; /*a0a0a0 но уж слишком светло, по теме сайта темно неплохо*/
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url("./internal/Caveat/Caveat-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Philosopher-Regular";
+    src: url("./internal/Philosopher/Philosopher-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "CormorantSC-Regular";
+    src: url("./internal/Cormorant_SC/CormorantSC-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "PoiretOne-Regular";
+    src: url("./internal/Poiret_One/PoiretOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "VollkornSC-Regular";
+    src: url("./internal/Vollkorn_SC/VollkornSC-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gabriela-Regular";
+    src: url("./internal/Gabriela/Gabriela-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Bellota-Regular";
+    src: url("./internal/Bellota/Bellota-Regular.ttf") format("truetype");
+}
+
+.vollkorn-reg-style {
+    font-family: "VollkornSC-Regular", sans-serif;
+}
+
+.poiretone-reg-style {
+    font-family: "PoiretOne-Regular", sans-serif;
+}
+
+:root {
+    --pink-color: #b81969;
+    --marker-color: rebeccapurple;
+}
+
+nav li::marker {
+    color: var(--marker-color);
+    font-size: 1.2em;
+}
+
+a {
+    color: gray;
+}
+
+a:visited {
+    color: var(--pink-color);
+}
+
+.pic1-img {
+    max-width: 100%;
+    height: auto;
+}
+
+blockquote {
+    font-family: "Caveat", sans-serif;
+    font-size: 17pt;
+}
+
+blockquote .sign {
+    font-size: 15pt;
+}
+
+.history {
+    font-family: "Philosopher-Regular", sans-serif;
+}
+
+.history div h3 {
+    background: linear-gradient(to right, red, blue);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /*Удаляем изначальный текст*/
+    animation: anim-grad-1 7s ease infinite;
+}
+
+@keyframes anim-grad-1 {
+    0% {
+        background-position: 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 50%;
+    }
+}
+
+.history div h3::first-letter {
+    font-size: 22pt;
+}
+
+.history-actor {
+    font-family: "Gabriela-Regular", sans-serif;
+    font-size: 16pt;
+}
+
+.defs {
+    font-family: "Bellota-Regular", sans-serif;
+}
+
+.defs dt {
+    font-family: "PoiretOne-Regular", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.countries-of-life {
+    font-family: "CormorantSC-Regular", sans-serif;
+}
+
+.countries-of-life li::marker {
+    color: var(--pink-color);
+}
+
+.names-and-skills li::marker {
+    color: var(--marker-color);
+    font-size: 1.2em;
+}
+
+.names-and-skills tr th {
+    font-family: "CormorantSC-Regular", sans-serif;
+}
+
+.names-and-skills tr {
+    font-family: "Courier New", sans-serif;
+}
+
+.skill-master {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.secret { /* Сокрытие по умолчанию + параметры*/
+    position: absolute;
+    background-color: black;
+    color: #7b7b7b;
+    padding: 5px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.skill-master:hover .secret { /* Показ при наведении*/
+    opacity: 1;
+}
+
+aside {
+    font-family: "Beirut", sans-serif;
+}
+
+.bellota-style {
+    font-family: "Bellota-Regular", sans-serif;
+}
+
+aside h3 {
+    font-family: "Gabriela-Regular", sans-serif;
+}
+
+.sign::after {
+    content: " (фильм)";
 }
