@@ -107,7 +107,6 @@ blockquote .sign {
 
 .history div h3::first-letter {
     font-size: 22pt;
-    color: white !important; /*Почему это не работает для меня загадка (даже с important)*/
 }
 
 .history-actor {
@@ -168,7 +167,7 @@ blockquote .sign {
     transition: opacity 0.3s;
 }
 
-.skill-master:hover .secret { /* Показ при навидении*/
+.skill-master:hover .secret { /* Показ при наведении*/
     opacity: 1;
 }
 
