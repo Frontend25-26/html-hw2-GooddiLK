@@ -89,6 +89,7 @@ blockquote .sign {
     background: linear-gradient(to right, red, blue);
     background-size: 200% 100%;
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; /*Удаляем изначальный текст*/
     animation: anim-grad-1 7s ease infinite;
 }
